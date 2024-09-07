@@ -4,39 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inferno On VR!</title> <!-- This is the title of the page -->
+    <title>Home</title>
     <style>
-        /* Your styles here */
-    </style>
-</head>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
-            margin: 0;
-            background-color: #f4f4f4;
         }
 
-        .video-container {
+        .container {
             text-align: center;
-        }
-
-        iframe {
-            border: none;
+            max-width: 800px;
+            padding: 20px;
         }
 
         h1 {
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .video-container {
+            margin-top: 30px;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            border: none;
+        }
+
+        .social-stats {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .highlight {
+            color: #0073e6;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="video-container">
-        <h1>Latest YouTube Video</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XM2rvQiFSBw&t" allowfullscreen></iframe>
+    <div class="container">
+        <h1>Hey, I'm [Your Name]!</h1>
+        <p>
+            I'm a 14-year-old YouTuber with big dreams of making it in the world of content creation. With nearly <span class="highlight">2000 followers</span> on TikTok and <span class="highlight">500 subscribers</span> on YouTube, I'm chasing my passion and working hard to create amazing content that entertains and inspires!
+        </p>
+        <p>
+            Follow me on this exciting journey as I work to grow my channel and hopefully, one day, make it big!
+        </p>
+
+        <div class="social-stats">
+            TikTok: <span class="highlight">2000 followers</span> | YouTube: <span class="highlight">500 subscribers</span>
+        </div>
+
+        <div class="video-container">
+            <h2>Latest YouTube Video</h2>
+            <iframe src="https://www.youtube.com/embed/XM2rvQiFSBw&t" allowfullscreen></iframe>
+        </div>
     </div>
 
 </body>
