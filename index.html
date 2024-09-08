@@ -10,8 +10,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url(EML_FIRE.gif') no-repeat center center fixed;
-            background-size: cover;
+            background: url('EML_Fire.gif') no-repeat center center fixed; /* Background GIF */
+            background-size: cover; /* Ensure the background covers the entire viewport */
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -23,8 +23,8 @@
             text-align: center;
             max-width: 800px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background to improve text readability */
+            border-radius: 10px; /* Optional: Adds rounded corners */
         }
 
         h1 {
@@ -59,17 +59,26 @@
             font-weight: bold;
         }
 
-        .merch-button {
+        .merch-link, .merch-button {
             margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .merch-link a, .merch-button a {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .merch-link a:hover, .merch-button a:hover {
+            text-decoration: underline;
         }
 
         .merch-button a {
             display: inline-block;
             padding: 10px 20px;
-            font-size: 1.2rem;
-            color: #fff;
             background-color: #0073e6;
-            text-decoration: none;
+            color: #fff;
             border-radius: 5px;
         }
 
@@ -103,9 +112,13 @@
            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@inferno.gtag/video/7406518922826075438" data-video-id="7406518922826075438" style="max-width: 605px; min-width: 325px;" > <section> <a target="_blank" title="@inferno.gtag" href="https://www.tiktok.com/@inferno.gtag?refer=embed">@inferno.gtag</a> Discord In Bio! <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="gorillatag" target="_blank" href="https://www.tiktok.com/tag/gorillatag?refer=embed">#gorillatag</a> <a target="_blank" title="♬ original sound - inferno.gtag" href="https://www.tiktok.com/music/original-sound-7406518861224971051?refer=embed">♬ original sound - inferno.gtag</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
 
-        <div class="merch-button">
-            <a href="https://www.infernovr.com" target="_blank">Check Out My Merch!</a>
+        <div class="merch-link">
+            <p>Check out my <a href="https://www.infernovr.com.com" target="_blank">merchandise</a>!</p>
         </div>
+        <!-- or use the button version -->
+        <!-- <div class="merch-button">
+            <a href="https://www.infernovr.com" target="_blank">Check Out My Merch!</a>
+        </div> -->
     </div>
 
 </body>
